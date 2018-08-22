@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const auth = require("./data/auth.json");
 
 
-client.login(auth.token);
+client.login(process.env.BOT_TOKEN);
 
 client.on("ready", () => {
 	console.log("I am ready!");
@@ -17,7 +17,7 @@ client.on("message", (message) => {
 	if(!message.content.startsWith(config.prefix) || message.author.bot) return;
 
 	if(message.content.startsWith(config.prefix)){
-		//Get the individual string in the command 
+		//Get the individual string in the command
 		const args = message.content.split(" ");
 		console.log(args);
 		const command = args.shift().slice(config.prefix.length);
@@ -33,7 +33,7 @@ client.on("message", (message) => {
 			console.log(error);
 			console.log("Could not find command!\n");
 		}
-		
+
 		if(!executed){
 			let commandFile = require(`./commands/soundByte.js`);
 			commandFile.run(client, message, message.content.split(" "));
