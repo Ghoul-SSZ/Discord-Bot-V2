@@ -2,7 +2,7 @@
   "name": "Mini_Sombra",
   "swaxeiption":"Discord Bot",
   "main":"mybot.js",
-  "version": "2.0",
+  "version": "",
   "scripts":{
     "start":"node mybot.js"
   },
