@@ -1,4 +1,3 @@
-NDgxODAyNTg5NjI1Nzc4MTc5.Dl7pYg.vJXJOmQ6iNbYLq2pi9QHar8ELZc
 INSTALLATION:
 * First, node package manager (npm) and node.js needs to be installed on the system.
 * Install discord.js in project with command "npm install discord.js"

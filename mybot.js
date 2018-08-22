@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const config = require("./data/config.json");
 const client = new Discord.Client();
-const auth = require("./data/auth.json");
+//const auth = require("./data/auth.json");
 
 
 client.login(process.env.BOT_TOKEN);
