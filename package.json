@@ -7,6 +7,7 @@
     "start":"node mybot.js"
   },
   "dependencies": {
+    "overwatch-api":"0.7.0",
     "chai": "^4.1.2",
     "discord.js": "^11.1.0",
     "jsonrequest": "^4.2.4",
